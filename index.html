@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>NKS</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav">
+        <!-- ✅ Logo -->
+        <a href="#" class="logo">
+          <img src="src/assets/logo_embedded.svg" alt="NKS Fruits logo" />
+          <!-- <div class="logo-text">
+            <h1>NKS</h1>
+            <h2>Fruits</h2> -->
+          <!-- </div> --> 
+        </a>
+
+        <!-- ✅ Toggle for mobile -->
+        <input
+          id="nav-toggle"
+          type="checkbox"
+          class="nav-toggle"
+          aria-label="Toggle menu"
+        />
+        <label for="nav-toggle" class="burger" aria-hidden="true"
+          ><span></span
+        ></label>
+
+        <!-- ✅ Navigation links -->
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="landing">
+        <div>
+          <h1>NKS Wholesale Fruit Suppliers</h1>
+          <h2>"Fresh Harvest, Global Reach"</h2>
+          <p>
+            Since 1989, our family-run business has been supplying
+            premium-quality fruits across Pakistan and internationally. Founded
+            by Noor Muhammad Khan in Islamabad, the business is now led by his
+            sons Noor Nawaz and Noor Zaman, who have expanded it to London,
+            Uzbekistan, Dubai, Afghanistan, and Iran.
+          </p>
+          <button>Get In Touch For Wholesale Orders</button>
+        </div>
+
+        <div class="image">
+          <img src="src/assets/NKS-pic.png" />
+        </div>
+      </section>
+      <section id="products" class="second">
+        <div class="first-s">
+          <h1>Our Products</h1>
+          <h3>
+            Premium quality fresh fruits sourced directly from the best farms
+          </h3>
+        </div>
+        <div class="products">
+          <ul>
+            <li><img src="src/assets/cantaloupe.jpg" alt=""/>Melons</li>
+            <li><img src="src/assets/apples.jpg" alt=""/>Apples</li>
+            <li><img src="src/assets/mangoes.jpg" alt="" />Mangoes</li>
+            <li><img src="src/assets/grapes.jpg" alt="" />Grapes</li>
+            <li><img src="src/assets/peaches.jpg" alt="" />Peaches</li>
+            <li><img src="src/assets/oranges.jpg" alt="" />Oranges</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="address">
+        <div class="first-child">
+          <h1>Our Locations</h1>
+          <h2>
+            Serving locally in Pakistan and nationwide with strategic branches
+          </h2>
+          <ul>
+            <li>
+              <img src="src/assets/pin.png" alt="" />
+              <h1>Main-Branch</h1>
+              <h2>Islamabad (Pakistan)</h2>
+              <h3>Plot 35, Sector I-11/4, Islamabad</h3>
+            </li>
+            <li>
+              <img src="src/assets/pin.png" alt="" />
+              <h1>Sub-Branch</h1>
+              <h2>Karachi (Pakistan)</h2>
+              <h3>Super Highway Fruit Mandi, Plot 66–67</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="second-child">
+          <h1>Import & Export Destinations</h1>
+          <h2>Proudly serving international markets with quality fruits</h2>
+          <ul>
+            <li><img src="src/assets/flags/london.png" alt="" />London</li>
+            <li><img src="src/assets/flags/pakistan.png" alt="" />Pakistan</li>
+            <li>
+              <img
+                src="src/assets/flags/united-arab-emirates.png"
+                alt=""
+              />Dubai
+            </li>
+            <!-- <li><img src="" alt="">Afghanistan</li> -->
+            <li><img src="src/assets/flags/iran.png" alt="" />Iran</li>
+          </ul>
+        </div>
+      </section>
+      <section id="about" class="about-page">
+        <div><h1>About Us</h1></div>
+        <div class="about-info">
+          <p>
+            Started in 1989 by our founder
+            <strong class="name">Noor Muhammad Khan</strong>, NKS Fruit
+            Suppliers began with a simple mission — to deliver quality fruits
+            with honesty and dedication.
+          </p>
+
+          <p>
+            Today, under the leadership of his sons
+            <strong class="name">Noor Nawaz</strong> and
+            <strong class="name">Noor Zaman</strong>, we proudly serve clients
+            across borders with 24/7 availability, 365 days a year.
+          </p>
+
+          <div>
+            <ul>
+              <li>
+                <div>35+</div>
+                <p>Years of Experience</p>
+              </li>
+              <li>
+                <div>4</div>
+                <p>Country served</p>
+              </li>
+              <li>
+                <div>24/7</div>
+                <p>Always Available</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-page">
+        <div class="contact-heading">
+          <h1>Contact Us</h1>
+          <h3>
+            Ready to place your wholesale order? Get in touch with us today!
+          </h3>
+        </div>
+        <div class="cards">
+          <div class="messages">
+            <h1>Message Us</h1>
+            <form
+              action="https://formspree.io/f/mrbonwkg"
+              method="POST"
+              id="contact-form"
+              class="contact-form"
+            >
+              <!-- form inputs -->
+              <ul>
+                <li>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Your Phone Number"
+                  />
+                </li>
+                <li>
+                  <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </li>
+              </ul>
+              <button type="submit">Send Message</button>
+              <p id="status"></p>
+            </form>
+
+            <script>
+              const form = document.getElementById("contact-form");
+              form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                const res = await fetch(form.action, {
+                  method: form.method,
+                  body: new FormData(form),
+                  headers: { Accept: "application/json" },
+                });
+                const status = document.getElementById("status");
+                if (res.ok) {
+                  status.textContent = "✅ Message sent successfully!";
+                  form.reset();
+                } else {
+                  status.textContent =
+                    "❌ Something went wrong. Please try again.";
+                }
+              });
+            </script>
+          </div>
+          <div class="whats-app">
+            <h1>Get In Touch</h1>
+            <ul>
+              <li>
+                <img src="src/assets/phone-whatsapp.png" alt="phone-pic" />
+                <div>
+                  <h4>Phone</h4>
+                  <h4>+92 3416667350</h4>
+                </div>
+              </li>
+              <li>
+                <img src="src/assets/mail-whatsapp.png" alt="mail-pic" />
+                <div>
+                  <h4>Email</h4>
+                  <h4>noor.muhammad. khan.sons@gmail.com</h4>
+                </div>
+              </li>
+              <li>
+                <img src="src/assets/map-whatsapp.png" alt="" />
+                <div>
+                  <h4>Main Branch</h4>
+                  <h4>Plot 35, Sector I-11/4, Islamabad</h4>
+                </div>
+              </li>
+            </ul>
+            <button>
+              <a
+                href="https://wa.me/923416667350?text=Hello%20I%20want%20to%20order%20fruits!"
+                target="_blank"
+              >
+                <img src="src/assets/whatsapp-icon.png" alt="" /> whatsApp us
+                <!-- 💬 Chat with us on WhatsApp -->
+              </a>
+            </button>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.2366467620625!2d73.02745184638518!3d33.63723706801258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38df95d4907c1eef%3A0x8df02ca92c73108b!2sNKS!5e1!3m2!1sen!2suk!4v1762506898261!5m2!1sen!2suk"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="footer">
+        <div>
+          <h1>NKS Wholesale Fruit Suppliers</h1>
+          <h3>Noor Muhammad Khan & Sons</h3>
+          <h4>"Fresh Harvest, Global Reach"</h4>
+          <br />
+          <h4>© 2025 NKS Wholesale Fruit Suppliers. Serving since 1989.</h4>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
