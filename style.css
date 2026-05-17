@@ -344,7 +344,6 @@ section {
   text-align: center;
   gap: 4em;
   background-color: #e9efe2;
-
 }
 
 .first-child {
@@ -361,7 +360,7 @@ section {
     justify-content: space-around;
     margin-top: 2em;
     flex-wrap: wrap;
-    gap: 1px;
+    gap: 6px;
     li {
       background-color: #ffffff;
       display: flex;
@@ -371,7 +370,9 @@ section {
       /* border: 1px solid gray; */
       padding: 2em;
       box-shadow: var(--box-shadow-light);
+      width: 100%;
       align-items: center;
+      text-align: center;
       flex-wrap: wrap;
       img {
         height: 3em;
