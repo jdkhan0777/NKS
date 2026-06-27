@@ -261,7 +261,7 @@ section {
     text-decoration: none;
     color: white;
   }
-  button {
+  button {£
     color: white;
     font-weight: bolder;
     background-color: #f97a20;
@@ -736,4 +736,26 @@ section {
       color: gray;
     }
   }
+}
+
+.international-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    /* align-items: flex-start; */
+    /* text-align: left; */
+}
+
+.domestic {
+    max-width: 700px;
+    margin: 0 auto;
+    /* color: #5F4B3A; */
+    /* font-size: 1.05rem; */
+    font-weight: bolder;
+    /* line-height: 1.8; */
+    letter-spacing: 0.3px;
+    text-align: left;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+  color: #7a6a5d;
+  line-height: 1.6;
 }
